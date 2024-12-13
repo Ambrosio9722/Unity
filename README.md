@@ -11,4 +11,5 @@ public class HelloWorld : MonoBehaviour
     }
 }
 ```
-![Unity Logo](https://upload.wikimedia.org/wikipedia/commons/c/c8/Unity_2021.svg)
+![Unity Logo](https://img2.cgtrader.com/items/4007474/93b15d2d03/unity-3d-white-logo-3d-model-max-obj-fbx.jpg)
+
