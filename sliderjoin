@@ -1,0 +1,27 @@
+using UnityEngine;
+
+public class SliderJoin : MonoBehaviour
+{
+    public SliderJoint2D slider;
+    public JointMotor2D motor;
+    public float velocidade;
+    void Start()
+    {
+        motor = slider.motor;
+    }
+
+  
+    void Update()
+    {
+        if (slider.limitState == JointLimitState2D.LowerLimit)
+        {
+            motor.motorSpeed = velocidade;
+            slider.motor = motor;
+        }
+        if (slider.limitState == JointLimitState2D.UpperLimit)
+        {
+            motor.motorSpeed = -velocidade;
+            slider.motor = motor;
+        }
+    }
+}
